@@ -1,0 +1,13 @@
+<a routerLink="">Выйти</a>
+<div class="offer" *ngFor="let offer of offers">
+  <div class="img">
+    <img class="img-saved" src="{{offer?.img_url}}" alt="">
+  </div>
+  <p class="summary">Описание: {{offer?.summary}}<a href="{{offer?.lister_url}}">Перейти</a></p>
+  <p class="price">Цена: <b>{{offer?.price_formatted}}</b></p>
+  <p>Расположение: <b>{{offer?.title}}</b></p>
+  <button (click)="deleteOffer(offer?.lister_url)">Удалить</button>
+  <!-- <p>Ключевые слова: {{offer?.keywords}}</p>
+  <p>Ванные: {{offer?.bathroom_number}}</p>
+  <p>Спальни: {{offer?.bedroom_number}}</p> -->
+</div>

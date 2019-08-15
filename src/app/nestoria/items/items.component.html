@@ -1,0 +1,10 @@
+<div [ngClass]="{showMore:isShowMore}" class="">
+  <div class="offers" *ngFor="let offer of offers | async">
+    <h2>{{offer?.title}}</h2>
+    <div class="icon">
+      <img class="icon-img" src="{{offer.img_url}}" (click)="showMore(offer)">
+    </div>
+    <div class=""></div>
+    <h1 class="price">{{offer.price_formatted}}</h1>
+  </div>
+</div>

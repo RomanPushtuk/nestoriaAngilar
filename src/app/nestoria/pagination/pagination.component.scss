@@ -1,0 +1,24 @@
+.pagination {
+
+  .pages {
+    margin-top: 20px;
+    text-align: center;
+    font-family: Segoe UI;
+
+    span {
+      padding: 10px 15px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #f2f2f2;
+      }
+    }
+  }
+}
+
+
+// Включение и выключение modalInfo
+.disabled {
+  opacity: 0;
+  display: none;
+}

@@ -1,0 +1,15 @@
+<div class="filters">
+  <div class="filters-fix">
+    <div class="filters-info">
+      <p>Фильтры</p>
+    </div>
+    <select [formControl]="countrySeach" class="filters-select">
+      <option>uk</option>
+      <option>br</option>
+      <option>fr</option>
+    </select>
+
+    <input [formControl]="textSeach" class="filters-select" type="text" placeholder="Название города">
+    <button (click)="searchOffers()" class="search-real">Найти</button>
+  </div>
+</div>

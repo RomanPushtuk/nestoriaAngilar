@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IOffer } from './common/interfaces/offer'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'nestoria';
+
 }

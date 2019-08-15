@@ -1,0 +1,10 @@
+<div class="pagination">
+  <div [ngClass]="{disabled:navigationClass}"  class="pages" #pages>
+    <a href="#" (click)="previousPage()">< </a>
+    <span>{{numberPage}}</span>
+    <a href="#" (click)="nextPage()"> ></a>
+  </div>
+  <div (click)="showMore()" [ngClass]="{disabled:showMoreClass}" class="pages">
+    <span>Показать больше</span>
+  </div>
+</div>

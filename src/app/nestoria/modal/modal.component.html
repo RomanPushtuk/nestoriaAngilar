@@ -1,0 +1,11 @@
+<a class="offer" routerLink="">Выйти</a>
+<div class="offer">
+  <h3>{{offer?.title}}</h3>
+  <img src="{{offer?.img_url}}" alt="">
+  <p>Описание: {{offer?.summary}}<a href="{{offer?.lister_url}}">Перейти</a></p>
+  <p>Цена: <b>{{offer?.price_formatted}}</b></p>
+  <p>Ключевые слова: <b>{{offer?.keywords}}</b></p>
+  <p>Ванные: <b>{{offer?.bathroom_number}}</b></p>
+  <p>Спальни: <b>{{offer?.bedroom_number}}</b></p>
+  <button (click)="saveOffer(offer)">Сохранить</button>
+</div>
